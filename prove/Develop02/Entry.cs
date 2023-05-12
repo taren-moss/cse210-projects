@@ -21,7 +21,9 @@ public class Entry
         // I did't copy it exactly (it actually didn't work without modification)
 
         string[] prompts = System.IO.File.ReadAllLines("Prompts.txt"); // I decided to put the prompts in a text file for easy editing
-        Random random = new Random();
+        // This list could be written in the code rather than generated from a file, it doesn't matter either way.
+
+        Random random = new Random(); // Preparation to generate a random number
         int randomPromptIndex = random.Next((prompts.Length) - 1); // Index starts at 0, so subtract 1
         _sortedPrompt = prompts[randomPromptIndex]; // This returns one prompt from the list
         Console.WriteLine(_sortedPrompt);
