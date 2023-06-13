@@ -7,4 +7,11 @@ public class GrandchildClass : ChildClass
         Console.WriteLine(GetString());
         Console.WriteLine(GetInt());
     }
+
+    public int GetCountdown()
+    {
+        Console.WriteLine("This loops forever");
+        Thread.Sleep(500);
+        return GetCountdown();
+    }
 }
