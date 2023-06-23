@@ -1,0 +1,4 @@
+720
+Simple Goal|Simple Goal|Test Simple Goal|100|True
+Eternal Goal|Eternal Goal|Test Eternal Goal|10|False
+Checklist Goal|Checklist Goal|Test Checklist Goal|50|3|3|450|True
