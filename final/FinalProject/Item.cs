@@ -1,4 +1,4 @@
-public class Item : Object
+public class Item : ObjectThing
 {
     bool _inInventory;
     private string _visibleDescription;

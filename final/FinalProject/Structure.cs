@@ -1,4 +1,4 @@
-public class Structure : Object
+public class Structure : ObjectThing
 {
     bool _hasReward;
     string _rewardItem;

@@ -1,6 +1,6 @@
 public class ObjManager
 {
-    private List<Object> _gameObjects = new List<Object>();
+    private List<ObjectThing> _gameObjects = new List<ObjectThing>();
 
     public ObjManager(string objFile="Objects.txt")
     {
@@ -10,7 +10,7 @@ public class ObjManager
 
     public void GenerateObjects(string filename)
     {
-        _gameObjects = new List<Object>();
+        _gameObjects = new List<ObjectThing>();
         int count = 0;
 
         string[] objData = System.IO.File.ReadAllLines($"GameData\\{filename}");
@@ -127,7 +127,7 @@ public class ObjManager
         }
         else
         {
-            foreach (Object obj in _gameObjects)
+            foreach (ObjectThing obj in _gameObjects)
             {
                 if (obj.GetName() == command.ToUpper() && obj.GetLocation() == currentRoom.GetRoomName())
                 {

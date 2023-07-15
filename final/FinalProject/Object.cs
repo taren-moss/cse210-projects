@@ -1,4 +1,4 @@
-public abstract class Object
+public abstract class ObjectThing
 {
     protected string _objectName;
     protected string _objectType;
@@ -7,7 +7,7 @@ public abstract class Object
     protected string _objectDescription;
 
 
-    public Object()
+    public ObjectThing()
     {
         _objectName = "";
         _objectType = "";
@@ -15,7 +15,7 @@ public abstract class Object
         _needsExamined = false;
         _objectDescription = "";
     }
-    public Object(string name, string type, string room, bool needsExamined, string description)
+    public ObjectThing(string name, string type, string room, bool needsExamined, string description)
     {
         _objectName = name;
         _objectType = type;
