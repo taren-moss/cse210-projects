@@ -1,0 +1,9 @@
+Command[string], RoomRequirement[string], TargetRoom[string], NeedsExamined[bool], Output[string]
+DOOR|WORKSHOP|YARD|false|You step out through the workshop's open door.
+WORKSHOP|YARD|WORKSHOP|false|You step in through the workshop's open door.
+LAKE|YARD|LAKE|false|You walk towards the lake.
+PATH|LAKE|QUARRY|true|You walk through the path.
+YARD|LAKE|YARD|false|You walk back to the yard.
+FOREST|YARD|FOREST|false|You walk towards the forest.
+YARD|FOREST|YARD|false|You walk back to the yard.
+LAKE|QUARRY|LAKE|false|You walk back to the lake.

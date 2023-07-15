@@ -44,10 +44,14 @@ public class Room
 
     public void ExamineRoom()
     {
-        _roomExamined = true;
-    }
-    public void RunRoomCommand(RoomCommand command)
-    {
-
+        if (_roomExamined)
+        {
+            Console.WriteLine($"{_roomName} - You already examined the {_roomName.ToLower()}.");
+        }
+        else
+        {
+            _roomExamined = true;
+            Console.WriteLine($"{_roomName} - You examine the {_roomName.ToLower()}.");
+        }
     }
 }

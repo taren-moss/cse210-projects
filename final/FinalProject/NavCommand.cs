@@ -1,31 +1,38 @@
-public class RoomCommand : Command
+public class NavCommand : Command
 {
-    protected string _roomRequirement;
+    protected Room _roomRequirement;
+    protected Room _targetRoom;
     protected bool _needsExamined;
 
 
-    public RoomCommand() : base()
+    public NavCommand() : base()
     {
-        _roomRequirement = "";
+        _roomRequirement = new Room();
+        _targetRoom = new Room();
         _needsExamined = false;
     }
-    public RoomCommand(string name, bool hasRequirements, string room, bool needsExamined, string output) : base(name, "room", hasRequirements, output)
+    public NavCommand(string name, Room room, Room target, bool needsExamined, string output) : base(name, "Nav", output)
     {
         _roomRequirement = room;
+        _targetRoom = target;
         _needsExamined = needsExamined;
     }
 
 
-    public string GetRoomRequirement()
+    public Room GetRoomRequirement()
     {
         return _roomRequirement;
+    }
+    public Room EnterRoom()
+    {
+        return _targetRoom;
     }
     public bool GetExamineRequirement()
     {
         return _needsExamined;
     }
 
-    public void SetRoomRequirement(string room)
+    public void SetRoomRequirement(Room room)
     {
         _roomRequirement = room;
     }
@@ -35,10 +42,6 @@ public class RoomCommand : Command
     }
 
 
-    protected override bool CheckRequirements()
-    {
-        return base.CheckRequirements();
-    }
     protected override void RunCommand()
     {
         base.RunCommand();

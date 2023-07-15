@@ -1,0 +1,9 @@
+Name[string], Type[string], Location[string], RequiresExamined[bool], Description[string], AltDescription[string], ExtraBoolean[bool], ExtraString[string]
+FURNACE|STRUCTURE|WORKSHOP|false|The furnace is covered in soot and comes complete with a simple smelter. This is where you melt down scrap metal for reforging.|false|
+WORKBENCH|STRUCTURE|WORKSHOP|false|This is your workbench. It holds many tools and spare parts. It's seen a lot of use, and could use a little maintenance.|false|
+TRACTOR|STRUCTURE|YARD|true|You stripped this tractor of parts a long time ago, but you decide to check for any parts you may have missed.|true|SCRAP
+ARMOR|STRUCTURE|YARD|true|This is an unfinished attempt to create a mechanical suit of armor. It was too inefficient and heavy, so you gave up on it.|false|
+SHACK|STRUCTURE|FOREST|false|The shack is in a state of heavy disrepair. It's part of your property but you've always had an uneasy feeling about the shack. Best to leave it alone.|false|
+BRANCH|ITEM|FOREST|true|Just a thick branch, but a sturdy one. A branch like this could make a good bat for self defense, or a fine axle for your mechanisms.|false|You notice a BRANCH near the trunk of one of the Cedars.
+SALVAGE|ITEM|QUARRY|true|An assortment of valuable parts salvaged from the massive mechanical figure in the Quarry. It's technically contraband.|false|The figure is in good condition. Maybe you can SALVAGE something valuable from it.
+SCRAP|ITEM|YARD|true|A bit of rusty scrap. It's not much, but it's the best you could get out of the old tractor.|false|You don't find much.
