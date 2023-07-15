@@ -16,7 +16,17 @@ class Program
             Console.Write("What do you do? ");
             string input = Console.ReadLine();
 
-            testGame.RunCommand(input);
+            if (input.ToUpper() == "QUIT" || input.ToUpper() == "CLOSE")
+            {
+                Console.WriteLine("[Ending Program...]");
+                Thread.Sleep(500);
+                loop = false;
+            }
+            else
+            {
+                testGame.RunCommand(input);
+            }
         }
+        Console.WriteLine("[Program Ended]");
     }
 }
